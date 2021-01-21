@@ -1,6 +1,90 @@
 *{
+    box-sizing: border-box;
+}
+body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    box-sizing: border-box;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(/img/395434.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+/* container-01 */
+.container-1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.logo{
+    flex: 10%;
+    width: 50px;
+    padding-left: 50px;
+    cursor: pointer;
+    /* background-color: rgb(101, 79, 221); */
+}
+.nav-bar{
+    flex:80%;
+    padding-left: 20px;
+    /* background-color: rgb(226, 43, 165); */
+}
+.nav-bar a{
+    color: #ffffff;
+    font-size: 17px;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+a.active {
+    color: #06a8e7;
+}
+.signup-btn{
+    flex: 10%;
+    
+}
+.signup-btn a{
+    color: #ffffff;
+    font-size: 17px;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-image: 
+        /* linear-gradient(#42455a,#42455a), */
+        radial-gradient(circle at top left, #fd00da,#19d7f8);
+    /* background-origin: content-box;
+    background-clip: content-box,border-box; */
+}
+
+
+/* --------------------------------------- */
+/* meadia queries */
+
+@media screen and (max-width: 700px) {
+    .container-1{
+        flex-direction: column;
+        /* justify-content: center;
+        align-content: center; */
+    }
+    .logo{
+        padding: 0;
+        margin-left: -15px;
+        /* background-color: bisque; */
+    }
+    .nav-bar{
+        margin-top: 10px;
+    }
+    .nav-bar a{
+        display: flex;
+        margin: 10px;
+        text-align: center;
+        /* background-color: aquamarine; */
+    }
+    .signup-btn{
+        margin-top: 10px;
+    }
+  }
