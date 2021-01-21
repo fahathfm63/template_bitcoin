@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    overflow: hidden;
 }
 body{
     margin: 0;
@@ -13,6 +14,7 @@ body{
 }
 
 /* container-01 */
+/* ---------------------------------------------------------------------- */
 .container-1{
     display: flex;
     align-items: center;
@@ -45,24 +47,64 @@ a.active {
     flex: 10%;
     
 }
-.signup-btn a{
+.signup-btn button{
     color: #ffffff;
     font-size: 17px;
     text-decoration: none;
     text-align: center;
+    cursor: pointer;
+    outline: none;
     border: 2px solid transparent;
     border-radius: 20px;
     padding: 5px 20px;
     background-image: 
         /* linear-gradient(#42455a,#42455a), */
         radial-gradient(circle at top left, #fd00da,#19d7f8);
-    /* background-origin: content-box;
-    background-clip: content-box,border-box; */
+    /* background-origin: content-box; */
+    /* background-clip: content-box,border-box; */
+}   
+
+/* container-2 */
+/* --------------------------------------------------------------- */
+
+/* banner */
+.container-2{
+    display: flex;
+}
+.banner{
+    width: 60%;
+    height: 70%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    /* background-color: thistle; */
+}
+.banner h1{
+    color: #ffffff;
+    font-size: 60px;
+}
+.banner p{
+    color: #ffffff;
+    font-size: 16px;
+        margin-top: -30px;
+        line-height: 30px;
+    }
+.image{
+    width: 40%;
+    /* background-color:tomato; */
+}
+.image img{
+    max-width: 700px;
+    height: auto;
+    position: absolute;
+    top: 15%;
+    left: 55%;
 }
 
 
-/* --------------------------------------- */
+
 /* meadia queries */
+/* ------------------------------------------------------------------- */
 
 @media screen and (max-width: 700px) {
     .container-1{
