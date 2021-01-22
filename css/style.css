@@ -42,6 +42,7 @@ body{
 }
 a.active {
     color: #06a8e7;
+    font-weight: 500px;
 }
 .signup-btn{
     flex: 10%;
@@ -139,6 +140,8 @@ a.active {
 /* container-3 */
 .container-3{
     display: flex;
+}
+.links{
     position: absolute;
     left:0;
     bottom:0;
@@ -146,19 +149,39 @@ a.active {
     /* border-radius: 10px; */
     background-image: linear-gradient(to right,#1949e6,#28d0ee);
 }
-.container-3 ul{
+.links ul{
     display:inline-flex;
     margin-right: 50px;
-    /* margin-bottom: -5px; */
     text-align: center;
 }
-.container-3 ul li{
+.links ul li{
     list-style: none;
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
     letter-spacing: 2px;
     cursor: pointer;
+}
+.social-icons{
+    right: 72px;
+    bottom: 35px;
+    position: absolute;
+    /* background-color: aqua; */
+}   
+.social-icons ul li{
+    list-style: none;
+    margin-top:15px;
+    text-align:center;
+}
+.social-icons ul li a{
+    color: #999999;
+    border-radius: 50%;
+    border: 1px solid #999999;
+    padding: 5px;
+    display: block;
+}
+.social-icons li a i{
+   text-align: center ;
 }
 
 
